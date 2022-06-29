@@ -17,11 +17,11 @@ function calcolaPreventivo() {
     displayEmpty.classList.remove('errorMessage');
   }
 
-  if (ore > 4 && ore < 8) {
+  if (ore > 4 && ore <= 7) {
     costo = costo - sconto1 + ' ' + '£ <br> 10% discount applied ';
     displayEmpty.classList.remove('errorMessage');
   }
-  if (ore > 8 && ore <= 20) {
+  if (ore >= 8 && ore <= 20) {
     costo = costo - sconto2 + ' ' + '£ <br> 20% discount applied ';
     displayEmpty.classList.remove('errorMessage');
   }
